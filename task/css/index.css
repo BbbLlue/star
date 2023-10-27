@@ -1,0 +1,150 @@
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+body,
+html {
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 750px;
+    width: 10rem;
+    background: url(../images/crayon1.png) no-repeat left center fixed;
+    background-color: #ff4b91;
+}
+
+
+.content {
+    position: absolute;
+    font-size: 0.64rem;
+    font-family: "Lato", sans-serif;
+    height: 0.8rem;
+    line-height: .8rem;
+    /* background-color: antiquewhite; */
+    overflow: hidden;
+    top: 45%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    color: #ffcd4b;
+    font-weight: bolder;
+}
+
+
+
+/* 旋转图 */
+.box ul {
+    width: 6.6667rem;
+    height: 6.6667rem;
+    margin: auto;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    transform: translate(-100%, -100%);
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    border-radius: 50%;
+    text-align: center;
+    animation: myRotate 10s, dispear 10s forwards;
+    z-index: 9999;
+}
+
+
+
+.box ul li {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-size: 10rem;
+    transform: translateX(-50%);
+    background-image: url('../images/crayonsin.png');
+    background-repeat: no-repeat;
+    transform-origin: 3.333rem 3.333rem;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.box ul li:nth-child(1) {
+    background-position: -1.12rem -1.7867rem;
+    transform: rotate(45deg);
+}
+
+.box ul li:nth-child(2) {
+    background-position: -3.1733rem -1.8133rem;
+    transform: rotate(90deg);
+}
+
+.box ul li:nth-child(3) {
+    background-position: -5.28rem -1.6933rem;
+    transform: rotate(135deg);
+}
+
+.box ul li:nth-child(4) {
+    background-position: -7.333rem -1.7867rem;
+    transform: rotate(180deg);
+}
+
+.box ul li:nth-child(5) {
+    background-position: -1.12rem -4.08rem;
+    transform: rotate(225deg);
+}
+
+.box ul li:nth-child(6) {
+    background-position: -3.2133rem -4.04rem;
+    transform: rotate(270deg);
+}
+
+.box ul li:nth-child(7) {
+    background-position: -5.2533rem -4.12rem;
+    transform: rotate(315deg);
+}
+
+.box ul li:nth-child(8) {
+    background-position: -7.333rem -4.08rem;
+    transform: rotate(360deg);
+}
+
+@keyframes myRotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dispear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.arrowbox {
+    position: absolute;
+    bottom: .2667rem;
+    left: 78%;
+    background-color: #ff4b91;
+}
+
+.arrowt {
+    width: .4rem;
+    height: .4rem;
+    transform: rotate(45deg);
+    border-bottom: #ffcd4b .1rem solid;
+    border-right: #ffcd4b .1rem solid;
+}
+
+.arrowb {
+    width: .4rem;
+    height: .4rem;
+    transform: rotate(45deg);
+    border-bottom: #ffcd4b .1rem solid;
+    border-right: #ffcd4b .1rem solid;
+}

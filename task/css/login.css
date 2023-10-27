@@ -1,0 +1,146 @@
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+body,
+html {
+  min-width: 320px;
+  max-width: 750px;
+  width: 10rem;
+  background: url(../images/crayon1.png) no-repeat left center fixed;
+  background-color: #ff4b91;
+}
+.mainbox {
+  width: 10rem;
+  height: 5.3333rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.2667rem;
+  background-color: #ff7676;
+  overflow: hidden;
+}
+.mainbox .leftbox {
+  width: 5rem;
+  height: 5.3333rem;
+  position: relative;
+  border-right: 0.0267rem solid #ffcd4b;
+  float: left;
+}
+.mainbox .leftbox .imgbox {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ffcd4b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainbox .leftbox .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+.mainbox .rightbox {
+  width: 4.9rem;
+  height: 5.3333rem;
+  float: left;
+}
+.mainbox .rightbox .button {
+  width: 4rem;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 0.0133rem solid #ffcd4b;
+}
+.mainbox .rightbox .button button {
+  font-size: 0.32rem;
+  width: 1.5rem;
+  height: 0.5rem;
+  border: 0;
+  background-color: #ff7676;
+  color: #ffcd4b;
+}
+.mainbox .rightbox .register {
+  width: 4rem;
+  height: 4.5rem;
+  margin: 0 auto;
+  padding-top: 0.2667rem;
+}
+.mainbox .rightbox .register .username,
+.mainbox .rightbox .register .password {
+  margin-bottom: 0.2rem;
+}
+.mainbox .rightbox .register .username label,
+.mainbox .rightbox .register .password label {
+  font-size: 0.2667rem;
+  color: #ffcd4b;
+}
+.mainbox .rightbox .register .username input,
+.mainbox .rightbox .register .password input {
+  padding-left: 0.2667rem;
+  background-color: #ffcd4b;
+  width: 3.5rem;
+  height: 0.5rem;
+}
+.mainbox .rightbox .register .submit {
+  width: 2rem;
+  margin: 0 auto;
+}
+.mainbox .rightbox .register .submit button {
+  font-size: 0.2667rem;
+  color: #ff7676;
+  border-radius: 0.1333rem;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: #ffcd4b;
+}
+.mainbox .rightbox .register .registerMessage {
+  margin-top: 0.4rem;
+  font-size: 0.32rem;
+  font-weight: bolder;
+  color: #ffcd4b;
+}
+.mainbox .rightbox .login {
+  display: none;
+  width: 4rem;
+  height: 4.5rem;
+  margin: 0 auto;
+  padding-top: 0.2667rem;
+}
+.mainbox .rightbox .login .username,
+.mainbox .rightbox .login .password {
+  margin-bottom: 0.2rem;
+}
+.mainbox .rightbox .login .username label,
+.mainbox .rightbox .login .password label {
+  font-size: 0.2667rem;
+  color: #ffcd4b;
+}
+.mainbox .rightbox .login .username input,
+.mainbox .rightbox .login .password input {
+  color: #ff7676;
+  background-color: #ffcd4b;
+  padding-left: 0.2667rem;
+  width: 3.5rem;
+  height: 0.5rem;
+}
+.mainbox .rightbox .login .submit {
+  width: 2rem;
+  margin: 0 auto;
+}
+.mainbox .rightbox .login .submit button {
+  font-size: 0.2667rem;
+  color: #ff7676;
+  border-radius: 0.1333rem;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: #ffcd4b;
+}
+.mainbox .rightbox .login .loginMessage {
+  margin-top: 0.4rem;
+  font-size: 0.32rem;
+  font-weight: bolder;
+  color: #ffcd4b;
+}

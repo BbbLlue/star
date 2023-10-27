@@ -1,0 +1,172 @@
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+body,
+html {
+    min-width: 320px;
+    max-width: 750px;
+    width: 10rem;
+    background: url(../images/crayon1.png) no-repeat left center fixed;
+    background-color: #ff4b91;
+
+
+}
+
+
+
+.mainbox {
+    width: 10rem;
+    height: 5.3333rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .2667rem;
+    background-color: #ff7676;
+    overflow: hidden;
+
+    .leftbox {
+        width: 5rem;
+        height: 5.3333rem;
+        position: relative;
+        border-right: .0267rem solid #ffcd4b;
+        float: left;
+
+        .imgbox {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: #ffcd4b;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .rightbox {
+        width: 4.9rem;
+        height: 5.3333rem;
+        float: left;
+
+        .button {
+            width: 4rem;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: .0133rem solid #ffcd4b;
+
+            button {
+                font-size: .32rem;
+                width: 1.5rem;
+                height: .5rem;
+                border: 0;
+                background-color: #ff7676;
+                color: #ffcd4b;
+
+            }
+        }
+
+        .register {
+            width: 4rem;
+            height: 4.5rem;
+            margin: 0 auto;
+            padding-top: .2667rem;
+
+            .username,
+            .password {
+                margin-bottom: .2rem;
+
+                label {
+                    font-size: .2667rem;
+                    color: #ffcd4b;
+                }
+
+                input {
+                    padding-left: .2667rem;
+                    background-color: #ffcd4b;
+                    width: 3.5rem;
+                    height: .5rem;
+                }
+            }
+
+            .submit {
+                width: 2rem;
+                margin: 0 auto;
+
+                button {
+                    font-size: .2667rem;
+                    color: #ff7676;
+                    border-radius: .1333rem;
+                    width: 2rem;
+                    height: .5rem;
+                    background-color: #ffcd4b;
+                }
+            }
+
+            .registerMessage {
+                margin-top: .4rem;
+                font-size: .32rem;
+                font-weight: bolder;
+                color: #ffcd4b;
+            }
+        }
+
+        .login {
+            display: none;
+            width: 4rem;
+            height: 4.5rem;
+            margin: 0 auto;
+            padding-top: .2667rem;
+
+            .username,
+            .password {
+                margin-bottom: .2rem;
+
+                label {
+                    font-size: .2667rem;
+                    color: #ffcd4b;
+                }
+
+                input {
+                    color: #ff7676;
+                    background-color: #ffcd4b;
+                    padding-left: .2667rem;
+                    width: 3.5rem;
+                    height: .5rem;
+                }
+            }
+
+
+            .submit {
+                width: 2rem;
+                margin: 0 auto;
+
+                button {
+                    font-size: .2667rem;
+                    color: #ff7676;
+                    border-radius: .1333rem;
+                    width: 2rem;
+                    height: .5rem;
+                    background-color: #ffcd4b;
+                }
+            }
+
+            .loginMessage {
+                margin-top: .4rem;
+                font-size: .32rem;
+                font-weight: bolder;
+                color: #ffcd4b;
+            }
+        }
+
+
+    }
+}

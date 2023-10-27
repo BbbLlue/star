@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="leftbox">
+            <div class="imgbox">
+                <img src="images/crayon2.png" alt="">
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="button">
+                <button class="bregister">REGISTER</button>
+                <button class="blogin">LOGIN</button>
+            </div>
+            <div class="register">
+                <form action="">
+                    <div class="username">
+                        <label for="un">Username:</label>
+                        </br>
+                        <input type="text" id="reun" placeholder="your name">
+                    </div>
+
+                    <div class="password">
+                        <label for="pwd">Password:</label>
+                        </br>
+                        <input type="password" id="repwd" placeholder="your password">
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit" class="registerSub">Sign Up</button>
+                    </div>
+                    <p class="registerMessage"></p>
+
+                </form>
+
+            </div>
+            <div class="login">
+                <form action="">
+                    <div class="username">
+                        <label for="un">Username:</label>
+                        </br>
+                        <input type="text" id="loun" placeholder="your name">
+                        <p class="namemessage"></p>
+                    </div>
+                    <div class="password">
+                        <label for="pwd">Password:</label>
+                        </br>
+                        <input type="password" id="lopwd" placeholder="your password">
+                        <p class="passwordmessage"></p>
+                    </div>
+
+                    <div class="submit">
+                        <button type="submit" class="loginSub">Login</button>
+                    </div>
+                    <p class="loginMessage"></p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

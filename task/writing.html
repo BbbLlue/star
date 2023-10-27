@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bblue's article</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/flexible.js"></script>
+    <style>
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 75px !important;
+            }
+        }
+
+        body {
+            background-color: #ff4b91;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box {
+            padding-top: .2rem;
+            width: 10rem;
+            margin: 0 auto;
+        }
+
+        .search-box {
+            width: 10rem;
+            text-align: center;
+        }
+
+        .search-box input {
+            color: #ff4b91;
+            padding-left: .3rem;
+            width: 6rem;
+            height: .6rem;
+            border-radius: .3rem;
+            background-color: #ffcd4b;
+        }
+
+        .search-box button {
+            width: .6rem;
+            height: .6rem;
+            background-color: #ffcd4b;
+            border-radius: .3rem;
+            color: #ff4b91;
+        }
+
+        article {
+            margin: .1333rem;
+            text-align: center;
+            height: 1.4rem;
+            border: .0133rem solid #ffcd4b;
+            border-radius: .7rem;
+            color: #ffcd4b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="search-box">
+            <input type="text" name="" id="search-input">
+            <button onclick="searchArticles()">搜索</button>
+        </div>
+        <article>
+            <h2>我的大学展望</h2>
+            <p>我的大学、开心、美好、充实</p>
+        </article>
+        <article>
+            <h2>我的技术分享</h2>
+            <p>html css js jq </p>
+        </article>
+        <article>
+            <h2>读书笔记</h2>
+            <p>软件工程 大学物理</p>
+        </article>
+        <article>
+            <h2>微积分学习</h2>
+            <p>二重积分 三重积分</p>
+        </article>
+    </div>
+    <script>
+        function searchArticles() {
+            var searchInput = document.getElementById('search-input').value.toLowerCase();
+            var articles = document.querySelectorAll('article');
+            articles.forEach(function (article) {
+                var articleText = article.innerText.toLowerCase();
+                if (articleText.includes(searchInput)) {
+                    article.style.display = "block";
+                } else {
+                    article.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

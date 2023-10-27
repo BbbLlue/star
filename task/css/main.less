@@ -1,0 +1,99 @@
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?co183v');
+    src: url('../fonts/icomoon.eot?co183v#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?co183v') format('truetype'),
+        url('../fonts/icomoon.woff?co183v') format('woff'),
+        url('../fonts/icomoon.svg?co183v#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    background: #ff4b91;
+}
+
+.w {
+    position: fixed;
+    width: 10rem;
+    height: 6rem;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .intro {
+        width: 5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        .profile {
+
+            width: 2.1rem;
+            height: 2.1rem;
+            margin-left: 1.45rem;
+            border-radius: 50%;
+            background-color: red;
+            background: url('../images/profile.png');
+            border: .0533rem solid #ffcd4b;
+            background-size: 2.1rem 2.1rem;
+
+        }
+
+        p {
+            color: #ffcd4b;
+            font-weight: bold;
+            font-size: .5333rem;
+        }
+    }
+
+    .more {
+        position: absolute;
+        bottom: 0rem;
+        width: 10rem;
+        height: 3rem;
+        border-bottom: .015rem solid #ff7676;
+        border-top: .015rem solid #ff7676;
+
+        ul {
+            height: 1rem;
+            line-height: 1rem;
+            text-align: center;
+
+
+            li {
+                float: left;
+                width: 2rem;
+                border-left: .015rem solid #ff7676;
+                font-size: .3rem;
+                margin-top: .7rem;
+
+                a {
+                    color: #ffcd4b;
+
+                    span {
+
+                        font-family: "icomoon";
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}
